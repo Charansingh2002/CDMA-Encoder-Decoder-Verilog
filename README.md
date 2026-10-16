@@ -4,7 +4,7 @@ CDMA Encoder and Decoder Using Verilog HDL
 
 This project implements a Code Division Multiple Access (CDMA) encoder and decoder using Verilog Hardware Description Language (HDL).
 
-The project demonstrates digital data processing, encoding and decoding logic, and simulation using Icarus Verilog and EDA Playground.
+It demonstrates digital data processing, encoding and decoding logic, and simulation using Icarus Verilog and EDA Playground.
 
 🎯 Objectives
 
@@ -17,20 +17,21 @@ The project demonstrates digital data processing, encoding and decoding logic, a
 
 - HDL: Verilog
 - Simulator: Icarus Verilog
-- Online platform: EDA Playground
-- Waveform viewer: EPWave
-- Version control: GitHub
+- Simulation Platform: EDA Playground
+- Waveform Viewer: EPWave
+- Version Control: GitHub
 
 📂 Project Files
 
 File| Description
-"design.v"| Contains the CDMA design and supporting modules
-"testbench.v"| Applies test inputs and observes the design output
-"waveform.png"| Shows the simulation waveforms
+"design.v"| Contains the CDMA design modules
+"testbench.v"| Provides test inputs and observes outputs
+"schematic.png"| Simulation waveform screenshot
+"README.md"| Project documentation
 
 ⚙️ Design Modules
 
-The design includes the following modules, as applicable to the source code:
+The design includes modules such as:
 
 - CDMA: Top-level module connecting the encoder and decoder.
 - CDMAENCOD: Encoder logic.
@@ -44,8 +45,6 @@ The design includes the following modules, as applicable to the source code:
 
 The project was simulated using Icarus Verilog on EDA Playground.
 
-The testbench applies a sequence of input data values and observes the corresponding output signals.
-
 Test Input Values
 
 - 98
@@ -54,31 +53,29 @@ Test Input Values
 - 57
 - 86
 
-The waveform can be used to observe the clock, input data, output data, and reset signals. The output timing may include pipeline delay.
+The testbench applies these input values and observes the output signals. Pipeline delays may affect when corresponding outputs appear.
 
 📈 Simulation Waveform
 
-"CDMA Simulation Waveform" (waveform.png)
+The following image shows the simulation waveform captured from EPWave.
+
+"CDMA Simulation Waveform" (schematic.png)
 
 ▶️ How to Run
 
 1. Open "EDA Playground" (https://www.edaplayground.com/).
-2. Paste the contents of "design.v" into the Design panel.
-3. Paste the contents of "testbench.v" into the Testbench panel.
+2. Copy the contents of "design.v" into the Design panel.
+3. Copy the contents of "testbench.v" into the Testbench panel.
 4. Select Icarus Verilog as the simulator.
 5. Run the simulation.
 6. Open EPWave to inspect the waveforms.
 
 🚀 Future Improvements
 
-- Verify encoding and decoding for additional input patterns.
-- Add automated checks to the testbench.
-- Improve test coverage for reset and pipeline behavior.
-- Integrate automated simulation with GitHub Actions.
-
-👨‍💻 Author
-
-Created as a Verilog HDL digital design project.
+- Test additional input patterns.
+- Add automated output checks to the testbench.
+- Improve reset and pipeline verification.
+- Automate simulation using GitHub Actions.
 
 📄 License
 
