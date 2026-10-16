@@ -41,8 +41,11 @@ The design includes modules such as:
 - encoder: Majority-logic encoding module.
 - processing_element: Processing and pipeline logic.
 
-🧪 Simulation
+🧪 Online Simulation
 
+Run the CDMA Encoder and Decoder Verilog simulation on EDA Playground:
+
+"Open EDA Playground Simulation" (https://www.edaplayground.com/x/NhFp)
 The project was simulated using Icarus Verilog on EDA Playground.
 
 Test Input Values
